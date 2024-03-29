@@ -1,0 +1,77 @@
+/* Import fonts */
+
+@import url(./googleFonts.css);
+
+/* Global Variables */
+:root {
+  --body_bg: #1e1e1e;
+
+  --h2_font_size: 40px;
+  --font_weight_bold: 700;
+  --h2_line_height: 45px;
+  --color_white: #fff;
+
+  --para_font_size: 14px;
+  --para_text_color: #f1f2fd;
+  --para_font_weight: 400;
+  --para_line_height: 25px;
+
+  --h5_text_color: #4f5de4;
+  --h5_font_size: 24px;
+}
+
+/* Global Variables */
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Urbanist", sans-serif;
+}
+body,
+html {
+  scroll-behavior: smooth;
+  font-size-adjust: 100%;
+  background-color: var(--body_bg);
+}
+h2 {
+  font-size: var(--h2_font_size);
+  font-weight: var(--font_weight_bold);
+  line-height: var(--h2_line_height);
+  color: var(--color_white);
+  text-transform: capitalize;
+}
+h5 {
+  color: var(--h5_text_color);
+  font-size: var(--h5_font_size);
+  font-weight: var(--font_weight_bold);
+  line-height: var(--para_line_height);
+  text-transform: uppercase;
+}
+p {
+  color: var(--para_text_color);
+  font-size: var(--para_font_size);
+  line-height: var(--para_line_height);
+  font-weight: var(--para_font_weight);
+}
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+input,
+textarea {
+  outline: none;
+  box-shadow: none;
+}
+/* Reset CSS */
+
+/* Common CSS Class */
+
+/* Common CSS Class */
