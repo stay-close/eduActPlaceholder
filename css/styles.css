@@ -98,6 +98,7 @@ a.btn {
   top: 0;
   left: 0;
   right: 0;
+  position: relative;
 }
 
 .main_menu_area,
@@ -112,5 +113,8 @@ a.btn {
 
 .login_area ul li {
   color: var(--color_white);
+}
+.collapse_menu_bar {
+  display: none;
 }
 /* ==== Header Area CSS ==== */
