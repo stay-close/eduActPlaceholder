@@ -58,6 +58,8 @@ p {
 a {
   text-decoration: none;
   text-transform: capitalize;
+  color: var(--color_white);
+  padding: 7px 15px;
 }
 ol,
 ul {
@@ -73,5 +75,42 @@ textarea {
 /* Reset CSS */
 
 /* Common CSS Class */
-
+.container {
+  width: 90%;
+  margin: 0 auto;
+  height: 100%;
+}
+a.btn {
+  color: var(--color_white);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 23px;
+  background: #f57005;
+  border-radius: 5px;
+  padding: 8px 15px;
+}
 /* Common CSS Class */
+
+/* ==== Header Area CSS ==== */
+.header_area {
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.main_menu_area,
+.main_menu ul,
+.login_area ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  height: 100%;
+}
+
+.login_area ul li {
+  color: var(--color_white);
+}
+/* ==== Header Area CSS ==== */
