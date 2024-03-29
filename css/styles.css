@@ -110,7 +110,9 @@ a.btn {
   gap: 20px;
   height: 100%;
 }
-
+.main_menu.active {
+  right: 0;
+}
 .login_area ul li {
   color: var(--color_white);
 }

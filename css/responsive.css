@@ -1,25 +1,39 @@
 @media (max-width: 1081px) {
-} /* ===== device (xs 0 > 576) ===== */
-@media (max-width: 575.98px) {
   .login_area {
     display: none;
   }
+}
+@media (max-width: 800px) {
   .main_menu {
     position: absolute;
     top: 100%;
     right: -100%;
-    background-color: red;
+    box-shadow: 4px 4px 6px -1px rgba(0, 0, 0, 0.3),
+      -2px -2px 4px -1px rgba(0, 0, 0, 0.6);
+    z-index: 999999;
+    transition: all 0.3s ease-in-out;
+    width: 50%;
+    border-radius: 5px;
+    padding: 20px 0;
   }
-  .main_menu.active{
-    right: 0;
-  }
+
   .main_menu ul {
     flex-direction: column;
   }
+  .main_menu ul li {
+    width: 80%;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding-bottom: 5px;
+}
 
   .collapse_menu_bar {
     display: block;
   }
+}
+
+/* ===== device (xs 0 > 576) ===== */
+@media (max-width: 575.98px) {
 }
 /* ===== device (xs 0 > 576) ===== */
 
