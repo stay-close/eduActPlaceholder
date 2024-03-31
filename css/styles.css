@@ -235,3 +235,58 @@ a.btn {
 }
 
 /* ====Service Area CSS */
+
+/* ==== About us area CSS */
+.about_us_area {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 100px;
+}
+.outer {
+  height: 660px;
+  width: 660px;
+  background: #35527d;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 22222;
+}
+.outer span.icon {
+  position: absolute;
+}
+.outer span.icon:first-child {
+  top: 0;
+  left: 0;
+}
+.outer span.icon:nth-child(2) {
+  bottom: 0;
+  right: 0;
+}
+.about_us_content h2 {
+  margin: 25px 0;
+}
+.content_list {
+  margin-top: 20px;
+}
+.content_wrap {
+  background: linear-gradient(to bottom, #ff7200 90%, #c2bebe 50%);
+  padding: 2px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.content_list .content {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background: #121534;
+
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* ==== About us area CSS */
