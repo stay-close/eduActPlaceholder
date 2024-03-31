@@ -5,19 +5,9 @@
 /* Global Variables */
 :root {
   --body_bg: #121534;
-
-  --h2_font_size: 40px;
-  --font_weight_bold: 700;
-  --h2_line_height: 45px;
   --color_white: #fff;
-
-  --para_font_size: 14px;
-  --para_text_color: #f1f2fd;
-  --para_font_weight: 400;
-  --para_line_height: 25px;
-
-  --h5_text_color: #4f5de4;
-  --h5_font_size: 24px;
+  --color_para: #f1f2fd;
+  --color_btn: #f57005;
 }
 
 /* Global Variables */
@@ -28,6 +18,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Urbanist", sans-serif;
+  transition: all 0.3s ease-in-out;
 }
 body,
 html {
@@ -35,25 +26,36 @@ html {
   font-size-adjust: 100%;
   background-color: var(--body_bg);
 }
-h2 {
-  font-size: var(--h2_font_size);
-  font-weight: var(--font_weight_bold);
-  line-height: var(--h2_line_height);
+h2,
+h3,
+h4,
+h5 {
   color: var(--color_white);
+  font-weight: 700;
   text-transform: capitalize;
 }
-h5 {
-  color: var(--h5_text_color);
-  font-size: var(--h5_font_size);
-  font-weight: var(--font_weight_bold);
-  line-height: var(--para_line_height);
-  text-transform: uppercase;
+h2 {
+  font-size: 40px;
+  line-height: 45px;
 }
+h3.section_heading {
+  font-size: 24px;
+  color: #4f5de4;
+  line-height: 25px;
+}
+h4 {
+  font-size: 20px;
+  line-height: 25px;
+}
+h5 {
+  font-size: 18px;
+}
+
 p {
-  color: var(--para_text_color);
-  font-size: var(--para_font_size);
-  line-height: var(--para_line_height);
-  font-weight: var(--para_font_weight);
+  font-size: 14px;
+  line-height: 25px;
+  color: var(--color_para);
+  font-weight: 400;
 }
 a {
   text-decoration: none;
@@ -76,7 +78,7 @@ textarea {
 
 /* Common CSS Class */
 .container {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   height: 100%;
 }
@@ -85,7 +87,7 @@ a.btn {
   font-weight: 600;
   font-size: 16px;
   line-height: 23px;
-  background: #f57005;
+  background: var(--color_btn);
   border-radius: 5px;
   padding: 8px 15px;
 }
@@ -123,15 +125,112 @@ a.btn {
 
 /* ==== Home Area CSS */
 .home_area {
-  background: url(../images/homeBg.png);
+  background: url(../images/home/homeBg.png);
   height: 100vh;
   background-size: cover;
   background-position: center;
 }
 .home_content {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   height: 100%;
 }
+.content h1 {
+  font-size: 80px;
+  line-height: 85px;
+  color: var(--color_white);
+}
+.content .home_btns {
+  margin-top: 25px;
+  display: flex;
+  gap: 20px;
+}
+.content .home_btns a.btn {
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #f57005;
+}
+.content .home_btns a.btn:hover {
+  background: transparent;
+}
+.content .home_btns a.btn::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 19px;
+  transform: rotate(33deg);
+  top: 9px;
+  right: -8px;
+  background: rgba(255, 255, 255, 0.3);
+}
 
 /* ==== Home Area CSS */
+
+/* ====Service Area CSS */
+
+.service_area {
+  display: flex;
+  gap: 40px;
+  margin: 100px 0;
+  justify-content: center;
+  background: url(../images/services/service_bg.png);
+  background-size: cover;
+  background-position: center;
+}
+.service {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  background: #13194f;
+  padding: 25px;
+  box-shadow: 10px 10px 20px -1px rgba(0, 0, 0, 0.3),
+    -1px -1px 10px -1px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  position: relative;
+  height: 330px;
+  max-width: 303px;
+}
+.service::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--body_bg);
+  border-bottom-right-radius: 25%;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.service .service_icon {
+  width: 76px;
+  height: 76px;
+  background: var(--color_btn);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 999;
+}
+.service .service_name {
+  margin: 20px 0;
+  position: relative;
+  z-index: 11111;
+}
+.service p {
+  position: relative;
+  z-index: 5468;
+}
+.service .service_btn {
+  margin-top: 20px;
+  position: relative;
+  z-index: 51222;
+}
+.service .service_btn a {
+  padding: 10px 0;
+  color: var(--color_btn);
+}
+
+/* ====Service Area CSS */
