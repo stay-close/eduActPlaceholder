@@ -168,15 +168,16 @@ a.btn {
 /* ==== Home Area CSS */
 
 /* ====Service Area CSS */
-
+.service_about_us_area {
+  background: url(../images/services/service_bg.png);
+  background-size: cover;
+  background-position: center;
+}
 .service_area {
   display: flex;
   gap: 40px;
   margin: 100px 0;
   justify-content: center;
-  background: url(../images/services/service_bg.png);
-  background-size: cover;
-  background-position: center;
 }
 .service {
   display: flex;
