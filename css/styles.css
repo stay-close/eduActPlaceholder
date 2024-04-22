@@ -77,11 +77,11 @@ textarea {
 /* Reset CSS */
 
 /* Common CSS Class */
-.container {
-  width: 80%;
+/* .container {
+  width: 90%;
   margin: 0 auto;
   height: 100%;
-}
+} */
 a.btn {
   color: var(--color_white);
   font-weight: 600;
